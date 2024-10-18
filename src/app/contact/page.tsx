@@ -6,6 +6,7 @@ export default function ContactPage() {
       <h1 className="title">contact me.</h1>
       
       <ContactForm />
+      <h3>How Does this work? Well its going to send To a Database where I get notifications when someone sends a message!</h3>
     </article>
   );
 }

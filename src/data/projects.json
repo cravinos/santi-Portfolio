@@ -31,7 +31,7 @@
         "name": "MSFT Autogen Unit Test Gen",
         "description": "AI Unit Test Generation using OPEN AI API & MSFT AutoGen Agents intercommunication VIA Node package for parallel execution in multiple tabs",
         "href": "https://github.com/cravinos/testAgentsTool",
-        "image": "/agent.png",
+        "image": "/Agent.png",
         "tags": [
           "node",
           "CLI",
@@ -51,7 +51,7 @@
         "name": "Portfolio website (this website :P)",
         "description": "My portfolio website showcasing what ive made!",
         "href": "https://github.com/cravinos/santi-portfolio",
-        "image": "/agent.png",
+        "image": "/blog1.1.png",
         "tags": [
           "Next.js","React","Tailwind","TypeScript"
         ],
@@ -81,7 +81,7 @@
         "name": "Pantry Application",
         "description": "Pantry API that has CRUD ability ans share of recipies with friends",
         "href": "https://github.com/cravinos/API-Pantry-Project",
-        "image": "/pantry.png",
+        "image": "/pantry.webp",
         "tags": ["React","Redux", "Vite","REST API"],
         "links": [
           {
