@@ -48,6 +48,22 @@
         ]
       },
       {
+        "name": "Portfolio website (this website :P)",
+        "description": "My portfolio website showcasing what ive made!",
+        "href": "https://github.com/cravinos/santi-portfolio",
+        "image": "/agent.png",
+        "tags": [
+          "Next.js","React","Tailwind","TypeScript"
+        ],
+        "links": [
+          {
+            "name": "Source",
+            "href": "https://github.com/cravinos/santi-portfolio",
+            "icon": "github"
+          }
+        ]
+      },
+      {
         "name": "Job Smith ",
         "description": "Google Custom Search Engine API - niche job finder",
         "href": "https://github.com/JobSmithIO/JobFinderjob",

@@ -28,7 +28,7 @@ export default async function Home() {
       <section className="flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
         <Image
           className="rounded-lg"
-          src="/ted.jpg"
+          src="/santi3.jpeg"
           alt="Photo of Santi!"
           width={175}
           height={175}
@@ -64,7 +64,7 @@ export default async function Home() {
 
       <section className="flex flex-col gap-8">
         <div className="flex justify-between">
-          <h2 className="title text-2xl sm:text-3xl">featured projects</h2>
+          <h2 className="title text-2xl sm:text-3xl">Featured Projects</h2>
           <LinkWithIcon
             href="/projects"
             position="right"
@@ -77,7 +77,7 @@ export default async function Home() {
 
       <section className="flex flex-col gap-8">
         <div className="flex justify-between">
-          <h2 className="title text-3xl">recent posts</h2>
+          <h2 className="title text-3xl">Recent Posts</h2>
           <LinkWithIcon
             href="/blog"
             position="right"
