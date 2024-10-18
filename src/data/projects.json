@@ -3,7 +3,7 @@
       {
         "name": "Morpheus",
         "description": "Your All-in-One Solution. Morpheus brings together real-time monitoring, intuitive dashboards, and unified container orchestration in a single, easy-to-use platform.  ",
-        "image": "/morpheus_demo1 (1).gif",
+        "image": "/morphgif.gif",
         "tags": [
           "Next.js",
           "Docker",
