@@ -1,0 +1,19 @@
+{
+    "socials": [
+      {
+        "name": "LinkedIn",
+        "href": "https://linkedin.com/in/santiago-cravino",
+        "icon": "linkedin"
+      },
+      {
+        "name": "GitHub",
+        "href": "https://github.com/cravinos",
+        "icon": "github"
+      },
+      {
+        "name": "Email",
+        "href": "mailto:santiago.cravino@me.com",
+        "icon": "mail"
+      }
+    ]
+  }

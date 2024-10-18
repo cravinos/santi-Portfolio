@@ -1,0 +1,32 @@
+{
+    "education": [
+      {
+        "name": "Rutgers University - New Brunswick",
+        "href": "https://www.rutgers.edu/",
+        "title": "BS in Business Analytics & Information Technology",
+        "logo": "/ru.png",
+        "start": "Sep 2019",
+        "end": "Apr 2023",
+        "description": [
+          "Rutgers Real Estate Club ",
+          "President of Rutgers Rugby FC 2020",
+          "Captain of Rutgers Rugby FC 2021,2022"
+        ],
+        "links": [
+          {
+            "name": "RBS Curriculum",
+            "href": "https://www.business.rutgers.edu/undergraduate-new-brunswick/business-analytics-information-technology",
+            "icon": "globe"
+          }
+        ]
+      },
+      {
+        "name": "CodeSmith Immersive Software Engineering Program",
+        "href": "https://www.codesmith.io/",
+        "title": "Software Engineer Program Graduate",
+        "logo": "/cs.png",
+        "start": "",
+        "end": ""
+      }
+    ]
+  }

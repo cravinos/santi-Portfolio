@@ -1,0 +1,106 @@
+{
+    "projects": [
+      {
+        "name": "Morpheus",
+        "description": "Your All-in-One Solution. Morpheus brings together real-time monitoring, intuitive dashboards, and unified container orchestration in a single, easy-to-use platform.  ",
+        "image": "/morpheus_demo1 (1).gif",
+        "tags": [
+          "Next.js",
+          "Docker",
+          "Kubernetes",
+          "SQL",
+          "Python",
+          "Grafana",
+          "Prometheus",
+          "React"
+        ],
+        "links": [
+          {
+            "name": "Source",
+            "href": "https://github.com/oslabs-beta/Morpheus",
+            "icon": "github"
+          },
+          {
+            "name": "Launch Article",
+            "href": "https://medium.com/@snc100/morpheus-your-all-in-one-monitoring-solution-695995a756f2",
+            "icon": "globe"
+          }
+        ]
+      },
+      {
+        "name": "MSFT Autogen Unit Test Gen",
+        "description": "AI Unit Test Generation using OPEN AI API & MSFT AutoGen Agents intercommunication VIA Node package for parallel execution in multiple tabs",
+        "href": "https://github.com/cravinos/testAgentsTool",
+        "image": "/agent.png",
+        "tags": [
+          "node",
+          "CLI",
+          "OpenAI",
+          "AutoGen",
+          "JavaScript"
+        ],
+        "links": [
+          {
+            "name": "Source",
+            "href": "https://github.com/cravinos/testAgentsTool",
+            "icon": "github"
+          }
+        ]
+      },
+      {
+        "name": "Job Smith ",
+        "description": "Google Custom Search Engine API - niche job finder",
+        "href": "https://github.com/JobSmithIO/JobFinderjob",
+        "image": "/jobsmith.gif",
+        "tags": ["React", "JavaScript", "TailWindCSS", "Node.js", "PostgreSQL", "Jest", "ShadCn"],
+        "links": [
+          {
+            "name": "Source",
+            "href": "https://github.com/JobSmithIO/JobFinder?tab=readme-ov-file",
+            "icon": "github"
+          }
+        ]
+      },
+      {
+        "name": "Pantry Application",
+        "description": "Pantry API that has CRUD ability ans share of recipies with friends",
+        "href": "https://github.com/cravinos/API-Pantry-Project",
+        "image": "/pantry.png",
+        "tags": ["React","Redux", "Vite","REST API"],
+        "links": [
+          {
+            "name": "Source",
+            "href": "https://github.com/cravinos/API-Pantry-Project",
+            "icon": "github"
+          }
+        ]
+      },
+      {
+        "name": "Paint The Night Sky ",
+        "description": "Application that geolocates users and gives data on local Sky activities and moon phases",
+        "href": "https://github.com/Paint-the-Night-Sky/Paint-the-Night-Sky",
+        "image": "/ptns.png",
+        "tags": ["React", "Redux", "scss", "REST API"],
+        "links": [
+          {
+            "name": "Source",
+            "href": "https://github.com/Paint-the-Night-Sky/Paint-the-Night-Sky",
+            "icon": "github"
+          }
+        ]
+      },{
+        "name": "Note Taking App with Sockets ",
+        "description": "Note Taking application with websockets for live connection",
+        "href": "https://github.com/cravinos/Note-taking-application",
+        "image": "/noteapp.png",
+        "tags": ["React", "sockets"],
+        "links": [
+          {
+            "name": "Source",
+            "href": "https://github.com/cravinos/Note-taking-application",
+            "icon": "github"
+          }
+        ]
+      }
+    ]
+  }

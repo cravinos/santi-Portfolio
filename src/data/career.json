@@ -1,0 +1,52 @@
+{
+    "career": [
+      {
+        "name": "OS Labs",
+        "href": "https://www.opensourcelabs.io/",
+        "title": "Software Engineer",
+        "logo": "/osl.jpeg",
+        "start": "Jul 2024",
+        "description": [
+          "Engineered ”Morpheus,” an open-source full-stack Next.js application providing real-time Docker metrics and Kubernetes visualizations",
+          "Built a real-time monitoring platform using cAdvisor, Prometheus, and Grafana. Designed custom PromQL queries and Grafana dashboards",
+          "Utilized AWS Bedrock for predictive analytics on Docker container metrics and provided optimized feedback"
+        ],
+        "links": [
+          {
+            "name": "Morpheus",
+            "href": "https://oslabs-beta.github.io/MorpheusLanding/",
+            "icon": "globe"
+          },
+          {
+            "name": "Medium Article",
+            "href": "https://medium.com/@snc100/morpheus-your-all-in-one-monitoring-solution-695995a756f2",
+            "icon": "book"
+          }
+        ]
+      },
+      {
+        "name": "Flexport",
+        "href": "https://www.flexport.com/",
+        "title": "ICQA & Continuous Improvement Manager",
+        "logo": "/fxprt.png",
+        "start": "Jan 2024",
+        "end": "Jun 2024",
+        "description": [
+          "Assisted Launch of Flexports first 1PL hub in New Jersey. Designed layout, SOP's and more",
+          "Launched algorithmic model for box dimension predictice sizing to save carboard and waste by >30%"
+        ]
+      },
+      {
+        "name": "Amazon",
+        "href": "https://www.amazon.com",
+        "title": "Area Manager and ADTA SME",
+        "logo": "/amzn.png",
+        "start": "May 2023",
+        "end": "Dec 2023",
+        "description": [
+          "Led SME efforts for Amazon’s ADTA system in the Northwest region, developing SOPs and improving package sorting. Increased redirect efficiency and achieved a 99.85% on-time delivery rate for 75,000+ daily packages.",
+          "Managed 150+ associates on a shift with 4 Process Assistants supporting me"
+        ]
+    }
+    ]
+  }
