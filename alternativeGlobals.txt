@@ -4,78 +4,63 @@
 
 @layer base {
   :root {
-    --background: 240 17% 15%;
+    --background: 240 6% 12%;
     --foreground: 0 0% 95%;
-    --card: 240 17% 18%;
+    --card: 240 6% 15%;
     --card-foreground: 0 0% 95%;
-    --popover: 240 17% 18%;
+    --popover: 240 6% 15%;
     --popover-foreground: 0 0% 95%;
-    --primary: 317 100% 54%;
-    --primary-foreground: 240 17% 15%;
-    --secondary: 180 100% 50%;
-    --secondary-foreground: 240 17% 15%;
-    --muted: 240 17% 25%;
-    --muted-foreground: 0 0% 70%;
-    --accent: 56 100% 50%;
-    --accent-foreground: 240 17% 15%;
-    --destructive: 0 100% 50%;
+    --primary: 158 100% 52%;
+    --primary-foreground: 240 6% 12%;
+    --secondary: 240 6% 20%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 240 6% 18%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 158 100% 52%;
+    --accent-foreground: 240 6% 12%;
+    --destructive: 0 85% 60%;
     --destructive-foreground: 0 0% 95%;
-    --border: 240 17% 30%;
-    --input: 240 17% 30%;
-    --ring: 317 100% 54%;
+    --border: 240 6% 25%;
+    --input: 240 6% 25%;
+    --ring: 158 100% 52%;
     --radius: 0.5rem;
-    --chart-1: 317 100% 54%;
-    --chart-2: 180 100% 50%;
+    --chart-1: 158 100% 52%;
+    --chart-2: 190 100% 50%;
     --chart-3: 56 100% 50%;
     --chart-4: 271 100% 71%;
     --chart-5: 31 100% 60%;
 
     --sh-identifier: #e0e0e0;
-    --sh-keyword: #ff79c6;
-    --sh-string: #50fa7b;
-    --sh-class: #8be9fd;
-    --sh-property: #bd93f9;
-    --sh-entity: #f1fa8c;
-    --sh-jsxliterals: #ffb86c;
-    --sh-sign: #6272a4;
-    --sh-comment: #6272a4;
+    --sh-keyword: #09FFA0;
+    --sh-string: #FF6B6B;
+    --sh-class: #4ECDC4;
+    --sh-property: #45B7D1;
+    --sh-entity: #FFD93D;
+    --sh-jsxliterals: #FF8C42;
+    --sh-sign: #6C757D;
+    --sh-comment: #6C757D;
   }
 
   .dark {
-    --background: 240 17% 10%;
+    --background: 240 6% 10%;
     --foreground: 0 0% 95%;
-    --card: 240 17% 13%;
+    --card: 240 6% 13%;
     --card-foreground: 0 0% 95%;
-    --popover: 240 17% 13%;
+    --popover: 240 6% 13%;
     --popover-foreground: 0 0% 95%;
-    --primary: 317 100% 54%;
-    --primary-foreground: 240 17% 10%;
-    --secondary: 180 100% 50%;
-    --secondary-foreground: 240 17% 10%;
-    --muted: 240 17% 20%;
-    --muted-foreground: 0 0% 70%;
-    --accent: 56 100% 50%;
-    --accent-foreground: 240 17% 10%;
-    --destructive: 0 100% 50%;
+    --primary: 158 100% 52%;
+    --primary-foreground: 240 6% 10%;
+    --secondary: 240 6% 18%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 240 6% 16%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 158 100% 52%;
+    --accent-foreground: 240 6% 10%;
+    --destructive: 0 85% 60%;
     --destructive-foreground: 0 0% 95%;
-    --border: 240 17% 25%;
-    --input: 240 17% 25%;
-    --ring: 317 100% 54%;
-    --chart-1: 317 100% 54%;
-    --chart-2: 180 100% 50%;
-    --chart-3: 56 100% 50%;
-    --chart-4: 271 100% 71%;
-    --chart-5: 31 100% 60%;
-
-    --sh-identifier: #f8f8f2;
-    --sh-keyword: #ff79c6;
-    --sh-string: #50fa7b;
-    --sh-class: #8be9fd;
-    --sh-property: #bd93f9;
-    --sh-entity: #f1fa8c;
-    --sh-jsxliterals: #ffb86c;
-    --sh-sign: #6272a4;
-    --sh-comment: #6272a4;
+    --border: 240 6% 22%;
+    --input: 240 6% 22%;
+    --ring: 158 100% 52%;
   }
 }
 
@@ -90,7 +75,7 @@
     @apply font-sans text-5xl font-bold tracking-tight text-primary;
   }
   .link {
-    @apply text-secondary transition-colors hover:text-primary;
+    @apply text-primary transition-colors hover:text-primary/80;
   }
   .prose pre {
     @apply overflow-x-auto rounded-lg bg-muted px-5 py-4 text-sm;

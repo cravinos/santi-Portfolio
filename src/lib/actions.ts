@@ -1,40 +1,29 @@
-"use server";
-
-import ContactFormEmail from "@/components/email/ContactFormEmail";
-import { Resend } from "resend";
-import { z } from "zod";
+// lib/actions.ts
 import { ContactFormSchema } from "./schemas";
+import { z } from "zod";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+type Inputs = z.infer<typeof ContactFormSchema>;
 
-type ContactFormInputs = z.infer<typeof ContactFormSchema>;
-
-export async function sendEmail(data: ContactFormInputs) {
-  const result = ContactFormSchema.safeParse(data);
-
-  if (result.error) {
-    return { error: result.error.format() };
-  }
-
+export const sendEmail = async (data: Inputs) => {
   try {
-    const { name, email, message } = result.data;
-    const { data, error } = await resend.emails.send({
-      from: `tedawf.com <contact@tedawf.com>`,
-      to: "hello@tedawf.com",
-      replyTo: [email],
-      cc: [email],
-      subject: `New message from ${name}!`,
-      text: `Name:\n${name}\n\nEmail:\n${email}\n\nMessage:\n${message}`,
-      // react: ContactFormEmail({ name, email, message }),
+    const response = await fetch('https://santi-portfolio-backend.onrender.com/api/v1/form_submissions', { // Replace with your actual Render URL
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        form_submission: data
+      }),
     });
 
-    if (!data || error) {
-      console.error(error?.message);
-      throw new Error("Failed to send email!");
+    if (!response.ok) {
+      const errorData = await response.json();
+      return { error: true };
     }
 
-    return { success: true };
+    return { error: false };
   } catch (error) {
-    return { error };
+    console.error('Error sending message:', error);
+    return { error: true };
   }
-}
+};
