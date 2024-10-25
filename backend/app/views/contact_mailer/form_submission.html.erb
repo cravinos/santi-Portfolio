@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Hey <%= @submission.name %>,</p>
+    <p>
+      <strong>Your Email:</strong>
+    </p>
+    <p><%= @submission.email %></p>
+    <p>
+      <strong>Your Message:</strong>
+    </p>
+    <p><%= @submission.message %></p>
+    <hr />
+    <p>Thank you for your message, <%= @submission.name %>! I will reply as soon as I can.</p>
+    <p>&copy; 2024 cravinos.dev</p>
+  </body>
+</html>
