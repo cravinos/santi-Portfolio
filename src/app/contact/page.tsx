@@ -1,44 +1,11 @@
-"use client"
+"use client";
 
-import { useEffect } from "react";
-import ContactForm from "@/components/ContactForm";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
-import Mermaid from "react-mermaid2";
-import { Mail, Server, Database, Zap, User, Monitor } from 'lucide-react';
+import { Mail, Server, Database, User, Monitor } from 'lucide-react';
+import ContactForm from "@/components/ContactForm";
+import Image from 'next/image';
 
 export default function ContactPage() {
-  useEffect(() => {
-    import('mermaid').then((mermaid) => {
-      mermaid.initialize({ 
-        startOnLoad: true,
-        fontFamily: 'Inter, sans-serif',
-        theme: 'neutral',
-        flowchart: {
-          curve: 'basis'
-        }
-      });
-    });
-  }, []);
-
-  const diagramDefinition = `
-    graph LR
-    F[("fa:fa-user User")]
-    A["fa:fa-react Next.js Frontend"]
-    B["fa:fa-gem Ruby on Rails Backend"]
-    C["fa:fa-server Render"]
-    D[("fa:fa-database Postgres Database")]
-    E["fa:fa-bolt Supabase"]
-    G["fa:fa-envelope Email Notification"]
-
-    F -->|Submits Form| A
-    A -->|API Requests| B
-    B -->|Hosted on| C
-    B -->|Queries| D
-    D -->|Hosted on| E
-    B -->|Sends| G
-    G -->|Notifies| F
-  `;
-
   return (
     <article className="mt-8 flex flex-col gap-8 pb-16 max-w-4xl mx-auto">
       <h1 className="text-4xl font-bold">Contact Me</h1>
@@ -57,7 +24,13 @@ export default function ContactPage() {
             When you submit a message, it is sent to our backend system, which processes, stores it securely, and notifies me immediately. Here is a breakdown of our architecture:
           </p>
           <div className="flex justify-center mb-6 bg-white p-4 rounded-lg shadow-inner">
-            <Mermaid chart={diagramDefinition} />
+            <Image 
+              src="/mermaid.svg"
+              alt="Architecture diagram showing the flow from user submission through the system"
+              width={600}
+              height={300}
+              className="w-full"
+            />
           </div>
           <ul className="list-none pl-0 space-y-4">
             <li className="flex items-center gap-2">
@@ -78,7 +51,7 @@ export default function ContactPage() {
             </li>
             <li className="flex items-center gap-2">
               <User className="w-5 h-5 text-orange-500" />
-              <strong>Quick Response:</strong> This system ensures I can respond to your inquiries promptly.
+              <strong>Response:</strong> This system ensures I can respond to your inquiries promptly.
             </li>
           </ul>
         </CardContent>
