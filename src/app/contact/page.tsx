@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import ContactForm from "@/components/ContactForm";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import Mermaid from "react-mermaid2";
 import { Mail, Server, Database, Zap, User, Monitor } from 'lucide-react';
 
