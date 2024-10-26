@@ -20,8 +20,8 @@ interface ContactFormEmailProps {
       </p>
       <p>{message}</p>
       <hr />
-      <p>Thank you for your message, {name}! I will reply as soon as I can.</p>
-      <p>&copy; 2024 tedawf.coms</p>
+      <p>Thank you for your message, {name}! I will reply as soon as I can. Meanwhile, have an amazing day!</p>
+      <p>&copy; 2024 cravinos.dev</p>
     </div>
   );
   

@@ -1,0 +1,155 @@
+---
+title: "Using LLM Agents in Sync to Build PR reviews"
+summary: "Using Agents to build a compact BUT complete PR review"
+image: "/map2.png"
+publishedAt: "2024-10-26"
+---
+# RBRDCK: AI-Powered Pull Request Reviewer
+
+*RBRDCK* is an AI-powered pull request reviewer that leverages a local Large Language Model (LLM) to analyze code changes and provide feedback. The primary goal is to integrate this tool into continuous integration/continuous deployment (CI/CD) pipelines and GitHub Actions to automatically comment on and review pull requests.
+
+{/* Add a cover image illustrating the project concept */}
+{/* ![Project Cover Image](/coderev.png) */}
+
+## Overview
+
+RBRDCK stands for **Reubber Duck**, and it's designed to enhance the code review process by automating the analysis of pull requests. By using a local LLM, it ensures that sensitive code remains within your infrastructure, providing both cost efficiency and security.
+
+{/* Placeholder for an architecture diagram */}
+{/* ![Architecture Diagram](/map.png) */}
+
+## Features
+
+- **Automated Code Reviews**: Analyzes pull requests and provides feedback on code quality, documentation, test coverage, and dependencies.
+- **Local LLM Integration**: Utilizes a locally hosted LLM, eliminating the need for external API calls and reducing operational costs.
+- **Modular Agents**: Employs specialized agents for different aspects of code review, each focusing on a specific area.
+- **CLI Interface**: Offers a command-line interface for easy integration into existing workflows.
+
+{/* Placeholder for a screenshot of the CLI in action */}
+{/* ![CLI Interface](path/to/your/cli_screenshot.png) */}
+
+
+## Example images of project in ACTION!
+![images of RBRdck in action ](/coderev.png)
+![images of RBRdck in action 2 ](/coderev2.png)
+
+
+## Folder Structure
+
+The project is organized as follows:
+
+```plaintext
+github_repo/
+├── main.py
+├── cli.py
+├── config.py
+├── requirements.txt
+├── README.md
+├── llm/
+│   ├── __init__.py
+│   └── ollama_llm.py
+├── agents/
+│   ├── __init__.py
+│   ├── base_review_agent.py
+│   ├── code_quality_agent.py
+│   ├── documentation_review_agent.py
+│   ├── test_coverage_agent.py
+│   └── dependency_review_agent.py
+├── utils/
+│   ├── __init__.py
+│   ├── diff_parser.py
+│   └── github_helper.py
+├── prompts/
+│   ├── __init__.py
+│   └── prompt_templates.py
+└── tests/
+    └── ... (testing scripts)
+```
+How It Works
+## 1. LLM Integration
+At the core of RBRDCK is the OllamaLLM class, which interfaces with a locally hosted LLM:
+```
+# llm/ollama_llm.py
+
+class OllamaLLM:
+    def call(self, prompt: str) -> str:
+# Sends the prompt to the local LLM and returns the response pass
+        ```
+## 2. Agents
+RBRDCK uses specialized agents to perform different aspects of the code review:
+
+**CodeQualityAgent**: Analyzes code for style, complexity, and potential issues.
+**DocumentationReviewAgent**: Ensures that code changes are properly documented.
+**TestCoverageAgent**: Checks if the code changes are adequately tested.
+**DependencyReviewAgent**: Reviews changes in dependencies for security and compatibility issues.
+
+#### Each agent inherits from BaseReviewAgent and implements its specific review logic.
+
+<br/>
+## 3. Review Orchestration
+The ReviewOrchestrator coordinates the agents:
+
+```
+# agents/review_orchestrator.py
+
+class ReviewOrchestrator:
+    def conduct_collaborative_review(self, context: ReviewContext) -> str:
+        # Orchestrates the review process among agents
+        pass
+        ```
+## 4. CLI Interface
+The cli.py script provides a command-line interface to run the review process:
+
+```
+python cli.py username repo-name --pr 123
+```
+
+
+## Getting Started
+
+### Prerequisites
+Python 3.7+
+A local LLM server running (e.g., Ollama) As of right now, will work with OPENAI implementation soon...
+GitHub access token with appropriate permissions
+
+# Installation
+Clone the Repository
+
+```
+git clone https://github.com/cravinos/rbrdck.git
+```
+## Install Dependencies
+
+```
+pip install -r requirements.txt
+```
+## Configure Environment Variables
+
+Create a .env file and set your GitHub token:
+
+```
+GITHUB_TOKEN=your_github_token_here
+```
+## Usage
+## Run the CLI to review a specific pull request:
+
+```
+python cli.py username repo-name --pr 123
+```
+
+### Future Development Plans
+I am looking to develop this project further by integrating it with OpenAI SWARM and AutoGen v0.4.
+
+#### OpenAI SWARM
+OpenAI SWARM is a work-in-progress framework aimed at orchestrating multiple AI agents to perform complex tasks collaboratively. Although it currently has limited functionalities, it shows promise for managing interactions between different AI components.
+
+
+#### AutoGen v0.4
+AutoGen v0.4 is another framework that facilitates the creation of autonomous AI agents. It shares similarities with SWARM but is currently undergoing significant changes and has limited features.
+
+## Integration Goals
+Enhanced Collaboration: Use SWARM or AutoGen to improve how agents communicate and collaborate during the review process.
+Scalability: Leverage these frameworks to handle larger projects and more complex reviews efficiently.
+Advanced Capabilities: Incorporate advanced reasoning and problem-solving features provided by these frameworks.
+
+## frontend Will be built soon for east of use UI

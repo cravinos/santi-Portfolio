@@ -1,4 +1,3 @@
-// lib/schemas.ts
 import dynamicIconImports from "lucide-react/dynamicIconImports";
 import { z } from "zod";
 
@@ -14,7 +13,6 @@ export const ContactFormSchema = z.object({
   message: z.string().min(1, { message: "Message is required." }),
 });
 
-// Keep the rest of your original schemas unchanged
 const iconLink = z.object({
   name: z.string(),
   href: z.string().url(),

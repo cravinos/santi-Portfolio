@@ -3,6 +3,7 @@
       {
         "name": "Morpheus",
         "description": "Your All-in-One Solution. Morpheus brings together real-time monitoring, intuitive dashboards, and unified container orchestration in a single, easy-to-use platform.  ",
+        "href": "https://github.com/oslabs-beta/Morpheus",
         "image": "/morphgif.gif",
         "tags": [
           "Next.js",
@@ -23,6 +24,32 @@
           {
             "name": "Launch Article",
             "href": "https://medium.com/@snc100/morpheus-your-all-in-one-monitoring-solution-695995a756f2",
+            "icon": "globe"
+          }
+        ]
+      },
+      {
+        "name": "RBRDUCK - GenAI PR manager",
+        "description": "RBRDCK is an AI-powered pull request reviewer that leverages a local Large Language Model (LLM) to analyze code changes and provide feedback. The primary goal is to integrate this tool into continuous integration/continuous deployment (CI/CD) pipelines ",
+        "href": "https://github.com/cravinos/rbrdck",
+        "image": "/rbrdck.webp",
+        "tags": [
+          "Ollama",
+          "Python",
+          "cli",
+          "Agents",
+          "GenAI",
+          "OpenAI"
+        ],
+        "links": [
+          {
+            "name": "Source",
+            "href": "https://github.com/cravinos/rbrdck",
+            "icon": "github"
+          },
+          {
+            "name": "Blog Article",
+            "href": "https://cravinos.dev/blog/PersonalProject",
             "icon": "globe"
           }
         ]
@@ -53,7 +80,7 @@
         "href": "https://github.com/cravinos/santi-portfolio",
         "image": "/blog1.1.png",
         "tags": [
-          "Next.js","React","Tailwind","TypeScript"
+          "Next.js","React","Tailwind","TypeScript","Ruby On Rails", "PostgreSQL"
         ],
         "links": [
           {
