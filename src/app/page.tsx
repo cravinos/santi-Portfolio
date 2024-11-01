@@ -42,7 +42,7 @@ export default async function Home() {
             -year-old software developer from England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 <br></br>now living in the U.S 🇺🇸
           </p>
           <p className="mt-2 font-light">
-            I like to develop full-stack applications, lift at the gym without a spotter, and watch <s>Football</s> Soccer ⚽
+            I like to develop Generative-AI & full-stack applications, lift at the gym without a spotter, and watch <s>Football</s> Soccer ⚽
           </p>
           <div className="mt-4 flex items-end gap-1">
             <p className="font-semibold"><FlipWords words={words}/></p>

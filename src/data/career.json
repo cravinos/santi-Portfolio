@@ -47,6 +47,28 @@
           "Led SME efforts for Amazon’s ADTA system in the Northwest region, developing SOPs and improving package sorting. Increased redirect efficiency and achieved a 99.85% on-time delivery rate for 75,000+ daily packages.",
           "Managed 150+ associates on a shift with 4 Process Assistants supporting me"
         ]
-    }
+    },
+    {
+      "name": "RWJ Barnabas Health",
+      "href": "https://www.rwjbh.org/",
+      "title": "Compounding Pharmacy Technician",
+      "logo": "/rwj.png",
+      "start": "Dec 2022",
+      "end": "May 2023",
+      "description": [
+        "Collaborated with pharmacists to compound sterile medications and audit prescription orders using Epic Systems EMR, ensuring compliance with USP 797/800 standards for 200+ daily preparations",
+        "Performed daily Pyxis Controlled Substance system audits, reconciling electronic documentation with physical inventory and resolving discrepancies to maintain DEA compliance"
+      ]
+  },{
+    "name": "CVS Health",
+    "href": "https://www.cvs.com/",
+    "title": "Lead Pharmacy Technician, Immunizer & Clinic Coordinator",
+    "logo": "/cvs.jpeg",
+    "start": "Dec 2020",
+    "end": "Dec 2022",
+    "description": [
+      "Led pharmacy operations team of 7 staff, implementing COVID testing protocols, managing controlled substance audits, and training 20+ employees across locations on new digital health record systems while maintaining HIPAA compliance for 1000+ patient records"
+    ]
+}
     ]
   }
