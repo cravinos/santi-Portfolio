@@ -75,6 +75,29 @@
         ]
       },
       {
+        "name": "Salesforce Commerce Cloud Shop & SDK Explorer",
+        "description": "E-commerce platform built on Salesforce Commerce Cloud, featuring a custom-built SDK endpoint explorer for testing and documenting SCAPI endpoints. Utilizes SCAPI for backend operations with local browser caching for improved performance and faster page refreshes. The SDK explorer allows developers to interact with and test Commerce Cloud endpoints in real-time.",
+        "href": "https://cravinos.dev/blog/SalesforceCommerce",
+        "image": "/store1.png",
+        "tags": [
+          "Salesforce Commerce Cloud",
+          "SCAPI",
+          "JavaScript",
+          "React",
+          "Local Storage",
+          "Cache Management",
+          "REST API",
+          "SDK Development"
+        ],
+        "links": [
+          {
+            "name": "Blog Post",
+            "href": "https://cravinos.dev/blog/SalesforceCommerce",
+            "icon": "globe"
+          }
+        ]
+      },
+      {
         "name": "Portfolio website (this website :P)",
         "description": "My portfolio website showcasing what ive made!",
         "href": "https://github.com/cravinos/santi-portfolio",
